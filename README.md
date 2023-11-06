@@ -189,14 +189,15 @@ print(updated_json_data)
 # Output: {"name": "John Doe", "age": 30, "city": "New York", "occupation": "Engineer"}
 ```
 
-**Explanation**: In this example, we first parse a JSON string into a dictionary. Then, we modify the `age` and `city` values. After the modifications, we convert the updated dictionary back to a JSON string using `json.dumps()`.
+
+**Explanation**: Here, we parse a JSON string into a dictionary, then add a new key-value pair (`'occupation': 'Engineer'`). We then convert the updated dictionary back to a JSON string.
 
 **Output**:
 ```
-{"name": "John Doe", "age": 31, "city": "San Francisco"}
+{"name": "John Doe", "age": 30, "city": "New York", "occupation": "Engineer"}
 ```
 
-### Example 3: Adding a New Key-Value Pair
+### Example 4: Removing a Key-Value Pair
 
 ```python
 import json
@@ -207,15 +208,11 @@ json_data = '{"name": "John Doe", "age": 30, "city": "New York"}'
 # Parse JSON string to a Python dictionary
 data = json.loads(json_data)
 
-# Add a new key-value pair
-data['occupation'] = 'Engineer'
+# Remove a key-value pair
+del data['age']
 
 # Convert back to JSON
 updated_json_data = json.dumps(data)
 
-print(updated_json_data)
-# Output: {"name": "John Doe", "age": 30, "city": "New York", "occupation": "Engineer"}
+print(updated_json_data)  # Output: {"name": "John Doe", "city": "New York"}
 ```
-
-
-
