@@ -334,3 +334,37 @@ try:
 except json.JSONDecodeError as e:
     print(f"Error: {e}")
 ```
+
+
+**Explanation**: This example demonstrates error handling for cases where the provided string is not valid JSON. The `json.loads()` function can raise a `JSONDecodeError`, which we catch and print.
+
+**Output**:
+```
+Error: Expecting ',' delimiter: line 1 column 35 (char 34)
+```
+
+
+
+### Example 10: Reading and Writing from/to JSON Files
+
+```python
+import json
+
+# Writing to a JSON file
+data_to_write = {'name': 'John Doe', 'age': 30, 'city': 'New York'}
+
+with open('output.json', 'w') as file:
+    json.dump(data_to_write, file)
+
+# Reading from a JSON file
+with open('output.json', 'r') as file:
+    data_read = json.load(file)
+
+print(data_read)  # Output: {'name': 'John Doe', 'age': 30, 'city': 'New York'}
+```
+
+**Explanation**: In this example, we first write a Python dictionary to a JSON file using `json.dump()`. Then, we read the contents of the JSON file back into a Python dictionary using `json.load()`.
+
+**Output**: None (file created) / `{'name': 'John Doe', 'age': 30, 'city': 'New York'}` (printed content)
+
+These examples cover a range of scenarios for parsing and manipulating JSON data in Python. They demonstrate common operations like reading from files, handling nested structures, and working with both dictionaries and lists in JSON format.
