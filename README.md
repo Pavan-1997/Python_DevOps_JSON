@@ -106,4 +106,34 @@ print(data['name'])  # Output: John Doe
 print(data['age'])   # Output: 30
 ```
 
+**Explanation**: In this example, we have a JSON string `json_data` representing a person's information. We use `json.loads()` to parse this string into a Python dictionary called `data`. We then access individual elements within the dictionary using keys.
+
+**Output**:
+```
+John Doe
+30
+```
+
+### Example 2: Modifying JSON Data
+
+```python
+import json
+
+# JSON data as a string
+json_data = '{"name": "John Doe", "age": 30, "city": "New York"}'
+
+# Parse JSON string to a Python dictionary
+data = json.loads(json_data)
+
+# Modify data
+data['age'] = 31
+data['city'] = 'San Francisco'
+
+# Convert back to JSON
+updated_json_data = json.dumps(data)
+
+print(updated_json_data)  # Output: {"name": "John Doe", "age": 31, "city": "San Francisco"}
+```
+
+
 
