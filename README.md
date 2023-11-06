@@ -14,3 +14,15 @@ In Python, you can manipulate JSON data using the `json` module, which provides 
    data = json.loads(json_string)
    print(data)
    ```
+   
+2. **Reading JSON from a File:**
+   - The `json.load()` function is used to read JSON data from a file and convert it into a Python data structure.
+
+   ```python
+   import json
+
+   with open('data.json', 'r') as file:
+       data = json.load(file)
+   print(data)
+   ```
+
