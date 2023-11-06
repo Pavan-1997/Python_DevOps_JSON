@@ -337,3 +337,26 @@ json_data = json.dumps(data)
 
 print(json_data)  # Output: {"date": "2023-11-01T00:00:00"}
 ```
+
+
+**Explanation**: In this example, we have a Python dictionary with a date (represented as a `datetime` object). We convert it to a JSON string using `json.dumps()`.
+
+**Output**:
+```
+{"date": "2023-11-01T00:00:00"}
+```
+
+### Example 9: Error Handling for Invalid JSON
+
+```python
+import json
+
+# Invalid JSON data
+invalid_json = '{"name": "John Doe", "age": 30, "city": "New York"'
+
+try:
+    data = json.loads(invalid_json)
+    print(data)
+except json.JSONDecodeError as e:
+    print(f"Error: {e}")
+```
