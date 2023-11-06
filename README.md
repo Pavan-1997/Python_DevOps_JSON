@@ -239,3 +239,27 @@ data = json.loads(json_data)
 print(data['person']['name'])  # Output: John Doe
 print(data['person']['age'])   # Output: 30
 ```
+
+**Explanation**: Here, we have a JSON string with a nested structure. We parse it into a dictionary and then access elements within the nested structure using multiple keys.
+
+**Output**:
+```
+John Doe
+30
+```
+
+### Example 6: Handling JSON Arrays
+
+```python
+import json
+
+# JSON data as a string with an array
+json_data = '{"fruits": ["apple", "banana", "cherry"]}'
+
+# Parse JSON string to a Python dictionary
+data = json.loads(json_data)
+
+# Accessing elements in the array
+print(data['fruits'][0])  # Output: apple
+print(data['fruits'][2])  # Output: cherry
+```
