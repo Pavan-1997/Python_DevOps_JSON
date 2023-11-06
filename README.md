@@ -216,3 +216,26 @@ updated_json_data = json.dumps(data)
 
 print(updated_json_data)  # Output: {"name": "John Doe", "city": "New York"}
 ```
+
+**Explanation**: In this example, we parse a JSON string into a dictionary and then remove the key `'age'`. We then convert the modified dictionary back to a JSON string.
+
+**Output**:
+```
+{"name": "John Doe", "city": "New York"}
+```
+
+### Example 5: Working with Nested JSON
+
+```python
+import json
+
+# JSON data as a string with nested structure
+json_data = '{"person": {"name": "John Doe", "age": 30, "city": "New York"}}'
+
+# Parse JSON string to a Python dictionary
+data = json.loads(json_data)
+
+# Accessing nested elements
+print(data['person']['name'])  # Output: John Doe
+print(data['person']['age'])   # Output: 30
+```
