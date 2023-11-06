@@ -37,5 +37,24 @@ In Python, you can manipulate JSON data using the `json` module, which provides 
    json_string = json.dumps(data)
    print(json_string)
    ```
+   
+4. **Writing JSON to a File:**
+   - The `json.dump()` function is used to write JSON data to a file.
 
+   ```python
+   import json
+
+   data = {'name': 'John Doe', 'age': 30, 'city': 'New York'}
+   with open('output.json', 'w') as file:
+       json.dump(data, file)
+   ```4. **Writing JSON to a File:**
+   - The `json.dump()` function is used to write JSON data to a file.
+
+   ```python
+   import json
+
+   data = {'name': 'John Doe', 'age': 30, 'city': 'New York'}
+   with open('output.json', 'w') as file:
+       json.dump(data, file)
+   ```
 
