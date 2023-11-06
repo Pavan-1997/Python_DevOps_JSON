@@ -288,3 +288,52 @@ data = json.loads(json_data)
 print(data[0]['name'])  # Output: John Doe
 print(data[1]['age'])   # Output: 25
 ```
+
+
+**Explanation**: Here, we have a JSON string with a list of objects representing people. We parse it into a list of dictionaries and then access elements within each dictionary.
+
+**Output**:
+```
+John Doe
+25
+```
+
+### Example 8: Handling JSON with Dates
+
+```python
+import json
+from datetime import datetime
+
+# Python dictionary with a date
+data = {'date': datetime(2023, 11, 1).isoformat()}
+
+# Convert to JSON
+json_data = json.dumps(data)
+
+print(json_data)  # Output: {"date": "2023-11-01T00:00:00"}
+```
+
+
+
+**Explanation**: Here, we have a JSON string with a list of objects representing people. We parse it into a list of dictionaries and then access elements within each dictionary.
+
+**Output**:
+```
+John Doe
+25
+```
+
+### Example 8: Handling JSON with Dates
+
+```python
+import json
+from datetime import datetime
+
+# Python dictionary with a date
+data = {'date': datetime(2023, 11, 1).isoformat()}
+
+# Convert to JSON
+json_data = json.dumps(data)
+
+print(json_data)  # Output: {"date": "2023-11-01T00:00:00"}
+```
