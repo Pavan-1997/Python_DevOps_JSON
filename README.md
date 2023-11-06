@@ -26,3 +26,16 @@ In Python, you can manipulate JSON data using the `json` module, which provides 
    print(data)
    ```
 
+
+3. **Dumping JSON Data:**
+   - The `json.dumps()` function is used to convert a Python object (usually a dictionary or a list) into a JSON formatted string.
+
+   ```python
+   import json
+
+   data = {'name': 'John Doe', 'age': 30, 'city': 'New York'}
+   json_string = json.dumps(data)
+   print(json_string)
+   ```
+
+
