@@ -135,5 +135,59 @@ updated_json_data = json.dumps(data)
 print(updated_json_data)  # Output: {"name": "John Doe", "age": 31, "city": "San Francisco"}
 ```
 
+**Explanation**: In this example, we first parse a JSON string into a dictionary. Then, we modify the `age` and `city` values. After the modifications, we convert the updated dictionary back to a JSON string using `json.dumps()`.
+
+**Output**:
+```
+{"name": "John Doe", "age": 31, "city": "San Francisco"}
+```
+
+### Example 3: Adding a New Key-Value Pair
+
+```python
+import json
+
+# JSON data as a string
+json_data = '{"name": "John Doe", "age": 30, "city": "New York"}'
+
+# Parse JSON string to a Python dictionary
+data = json.loads(json_data)
+
+# Add a new key-value pair
+data['occupation'] = 'Engineer'
+
+# Convert back to JSON
+updated_json_data = json.dumps(data)
+
+print(updated_json_data)
+# Output: {"name": "John Doe", "age": 30, "city": "New York", "occupation": "Engineer"}
+```**Explanation**: In this example, we first parse a JSON string into a dictionary. Then, we modify the `age` and `city` values. After the modifications, we convert the updated dictionary back to a JSON string using `json.dumps()`.
+
+**Output**:
+```
+{"name": "John Doe", "age": 31, "city": "San Francisco"}
+```
+
+### Example 3: Adding a New Key-Value Pair
+
+```python
+import json
+
+# JSON data as a string
+json_data = '{"name": "John Doe", "age": 30, "city": "New York"}'
+
+# Parse JSON string to a Python dictionary
+data = json.loads(json_data)
+
+# Add a new key-value pair
+data['occupation'] = 'Engineer'
+
+# Convert back to JSON
+updated_json_data = json.dumps(data)
+
+print(updated_json_data)
+# Output: {"name": "John Doe", "age": 30, "city": "New York", "occupation": "Engineer"}
+```
+
 
 
