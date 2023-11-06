@@ -58,7 +58,7 @@ In Python, you can manipulate JSON data using the `json` module, which provides 
        json.dump(data, file)
    ```
 
-   5. **Accessing JSON Data:**
+5. **Accessing JSON Data:**
    - Once you've loaded JSON data, you can access individual elements using dictionary or list indexing.
 
    ```python
