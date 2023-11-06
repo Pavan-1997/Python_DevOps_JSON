@@ -263,3 +263,28 @@ data = json.loads(json_data)
 print(data['fruits'][0])  # Output: apple
 print(data['fruits'][2])  # Output: cherry
 ```
+
+
+**Explanation**: In this example, we have a JSON string with an array of fruits. We parse it into a dictionary and then access elements in the array using indices.
+
+**Output**:
+```
+apple
+cherry
+```
+
+### Example 7: Working with JSON Objects in a List
+
+```python
+import json
+
+# JSON data as a string with a list of objects
+json_data = '[{"name": "John Doe", "age": 30}, {"name": "Jane Doe", "age": 25}]'
+
+# Parse JSON string to a Python list of dictionaries
+data = json.loads(json_data)
+
+# Accessing elements in the list of objects
+print(data[0]['name'])  # Output: John Doe
+print(data[1]['age'])   # Output: 25
+```
