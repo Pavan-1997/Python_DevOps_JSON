@@ -1,5 +1,5 @@
 # Python_DevOps_JSON
-  
+   
 JSON (JavaScript Object Notation) manipulation in Python involves working with JSON data, which is a lightweight data-interchange format. It is easy for humans to read and write and easy for machines to parse and generate.
 
 In Python, you can manipulate JSON data using the `json` module, which provides methods for encoding and decoding JSON data. Here are some common JSON manipulation tasks in Python:
